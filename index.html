@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document  </title>
-    <link rel="stylesheet" href="css\styles.css">
+  <meta charset="UTF-8">
+  <title>Website Konversi Suhu </title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1> Website Konversi Suhu - Najwa</h1>
-    </header>
-    <main>
-        <!--Introduction-->
-        <section>
-            <p> </p>
-        </section>
-        <!--Form input-->
-        <form class="section-content">
-            <div class="section-item">
-                <label for="konversi-input">Celcius (&deg;C)</label>
-            </div>
-            <div clas="section-item">
-                <textarea id="konversi-input"></textarea>
-            </div>
-        
-            <!--Form action-->
-            <div class="section-item">
-                <button class="bg-1">Konversi</button>
-                <button class="bg-2">Reset</button>
-                <button class="bg-3">Reserve</button>
-            </div>
-        </form>
-    </main>
-    
+  <div class="container">
+    <h1>Website Konversi Suhu - Najwa N.A</h1>
+    <p>Masukkan suhu derajat Celsius (°C) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+
+    <label for="celsius">Celsius (°C)</label><br>
+    <textarea id="celsius" rows="2"></textarea><br>
+
+    <button onclick="convert()">Konversi</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="reverse()">Reverse</button><br><br>
+
+    <label for="fahrenheit">Fahrenheit (°F)</label><br>
+    <textarea id="fahrenheit" rows="2" readonly></textarea><br>
+
+    <label for="result">Cara kalkulasi</label><br>
+    <textarea id="result" rows="2" readonly></textarea>
+
+    <h3 style="color: black;">Cara Konversi dari celcius (°C) ke Fahrenheit (°F)</h3>
+    <hr>
+    <p>Suhu <i>S</i> dalam derajat Fahrenheit (°F) sama dengan suhu <i>S</i> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+    <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 9/5) + 32</p>
+    <p>atau</p>
+    <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 1.8) + 32</p>
+
+  <footer>© 2025 Najwa N.A. All rights reserved.</footer>
+</div>
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>
