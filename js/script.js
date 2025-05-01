@@ -11,7 +11,6 @@ function convert() {
 
   // Ambil input dan ganti koma ke titik
   const raw = input.value.trim().replace(",", ".");
-  console.log("Raw input:", raw);
   
   // Cek input kosong
   if (raw === "") {
