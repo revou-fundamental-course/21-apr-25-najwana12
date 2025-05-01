@@ -13,6 +13,7 @@ function convert() {
 
   // Ambil input dan ganti koma ke titik
   const raw = input.value.trim().replace(",", ".");
+  console.log("Raw input:", raw);
   
   // Cek input kosong
   if (raw === "") {
@@ -20,10 +21,12 @@ function convert() {
     output.value = "";
     formulaBox.value = "";
     icon.textContent = "⛅";
+    console.warn("Input kosong!");
     return;
   }
 
   const value = parseFloat(raw);
+  console.log("Parsed value:", value);
   
   // Validasi angka
   if (isNaN(value)) {
@@ -31,6 +34,7 @@ function convert() {
     output.value = "";
     formulaBox.value = "";
     icon.textContent = "⛅";
+    console.error("Input bukan angka!");
     return;
   }
 
@@ -45,6 +49,7 @@ function convert() {
     });
     formulaBox.value = `${value}°C × 9/5 + 32= ${fahrenheit}°F`;
     tampilkanIconCuaca(value); // suhu awal dalam Celsius
+    console.log(${value}°C = ${fahrenheit}°F);
   } else {
     const celsius = ((value - 32) * 5 / 9).toFixed(2);
     output.value = parseFloat(celsius).toLocaleString("id-ID", {
@@ -53,6 +58,7 @@ function convert() {
     });
     formulaBox.value = `(${value}°F - 32) × 5/9= ${celsius}°C`;
     tampilkanIconCuaca(parseFloat(celsius)); // suhu hasil dalam Celsius
+    console.log(${value}°F = ${celsius}°C);
   }
 }
 
@@ -64,6 +70,7 @@ function resetFields() {
   document.getElementById("iconCuaca").textContent = "⛅";
   document.getElementById("peringatan").textContent = "";
   document.getElementById("inputSuhu").focus(); // UX: arahkan kembali ke input
+  console.log("Form direset");
 }
 
 // Fungsi untuk menukar arah konversi
@@ -93,6 +100,7 @@ function reverse() {
   outputField.value = temp;
 
   convert(); // langsung konversi ulang
+  console.log("Konversi dibalik");
 }
 
 // Tampilkan ikon cuaca berdasarkan suhu Celsius
@@ -126,4 +134,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("convertBtn").addEventListener("click", convert);
   document.getElementById("resetBtn").addEventListener("click", resetFields);
   document.getElementById("reverseBtn").addEventListener("click", reverse);
+  console.log("Halaman siap digunakan");
 });
