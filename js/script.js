@@ -49,7 +49,8 @@ function convert() {
     });
     formulaBox.value = `${value}°C × 9/5 + 32= ${fahrenheit}°F`;
     tampilkanIconCuaca(value); // suhu awal dalam Celsius
-    console.log(${value}°C = ${fahrenheit}°F);
+   console.log(`${value}°C = ${fahrenheit}°F`);
+
   } else {
     const celsius = ((value - 32) * 5 / 9).toFixed(2);
     output.value = parseFloat(celsius).toLocaleString("id-ID", {
@@ -58,7 +59,8 @@ function convert() {
     });
     formulaBox.value = `(${value}°F - 32) × 5/9= ${celsius}°C`;
     tampilkanIconCuaca(parseFloat(celsius)); // suhu hasil dalam Celsius
-    console.log(${value}°F = ${celsius}°C);
+    console.log(`${value}°F = ${celsius}°C`);
+
   }
 }
 
