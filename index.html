@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+    div class="container">
+    <h1>🌡️ Kalkulator Suhu</h1>
+
+    <!-- Catatan penggunaan -->
+    <div class="note">
+      <b>Catatan:</b><br>
+      Masukkan nilai suhu dalam Celsius (°C) di bawah, lalu tekan tombol <i>Konversi</i> untuk melihat hasilnya dalam Fahrenheit (°F). 
+      Jika ingin mengubah arah konversi, tinggal klik tombol <i>Reverse</i>.
+    </div>    
+
+    <!-- Menampilkan ikon cuaca berdasarkan suhu -->
+    <div id="iconCuaca">⛅</div>
+
+    <!-- Input suhu -->
+    <label for="inputSuhu" id="inputLabel">Celsius (°C)</label>
+    <input type="text" id="inputSuhu" placeholder="Contoh: 25" />
+    <p id="peringatan" class="peringatan"></p>
+
+    <!-- Output suhu hasil konversi -->
+    <label for="outputSuhu" id="outputLabel">Fahrenheit (°F)</label>
+    <input type="text" id="outputSuhu" placeholder="Hasil konversi" readonly />
+
+    <!-- Tombol aksi -->
+    <div class="button-group">
+      <button id="convertBtn">Konversi</button>
+      <button id="resetBtn">Reset</button>
+      <button id="reverseBtn">Reverse</button>
+    </div>
+
+    <!-- Rumus atau proses kalkulasi -->
+    <label for="formula">Cara Kalkulasi</label>
+    <textarea id="formula" readonly placeholder="Langkah konversi suhu akan ditampilkan di sini."></textarea>
+
+    <!-- Penjelasan rumus konversi -->
+    <div id="penjelasan">
+      <h2>🔍 Rumus Konversi</h2>
+      <p><strong>Celsius ➜ Fahrenheit:</strong> (°C × 9/5) + 32</p>
+      <p><strong>Fahrenheit ➜ Celsius:</strong> (°F - 32) × 5/9</p>
+    </div>
+
+    <!-- Footer pribadi -->
+    <footer>
+      <p style="text-align: center; color: gray;">© 2025 Najwa. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
