@@ -49,7 +49,7 @@ function convert() {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     });
-    formulaBox.value = `(${value}°F - 32) × 5/9\n= ${celsius}°C`;
+    formulaBox.value = `(${value}°F - 32) × 5/9= ${celsius}°C`;
     tampilkanIconCuaca(parseFloat(celsius)); // suhu hasil dalam Celsius
   }
 }
