@@ -41,7 +41,7 @@ function convert() {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     });
-    formulaBox.value = `${value}°C × 9/5 + 32\n= ${fahrenheit}°F`;
+    formulaBox.value = `${value}°C × 9/5 + 32= ${fahrenheit}°F`;
     tampilkanIconCuaca(value); // suhu awal dalam Celsius
   } else {
     const celsius = ((value - 32) * 5 / 9).toFixed(2);
