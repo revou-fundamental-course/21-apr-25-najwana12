@@ -1,3 +1,5 @@
+console.log("JavaScript is working!");
+
 // Penanda mode konversi: true = dari Celsius ke Fahrenheit
 let isCelsiusToFahrenheit = true;
 
