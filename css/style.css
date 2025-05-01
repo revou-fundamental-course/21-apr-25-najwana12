@@ -1,0 +1,153 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #f3e8ff); /* biru ke ungu lembut */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #f8fafc;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  max-width: 95%;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-size: 1.65rem; /* sedikit lebih besar */
+}
+
+/* Kotak Note */
+.note {
+  background-color: #e0f2fe;
+  border-left: 4px solid #0ea5e9;
+  padding: 14px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  box-sizing: border-box;
+  resize: none;
+}
+
+/* Peringatan Validasi */
+.peringatan {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: -12px;
+  margin-bottom: 16px;
+  height: 18px;
+}
+
+/* Tombol */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Warna tombol disesuaikan */
+button:nth-child(1) {
+  background-color: #22c55e; /* hijau */
+}
+button:nth-child(1):hover {
+  background-color: #16a34a;
+}
+
+button:nth-child(2) {
+  background-color: #ef4444; /* merah */
+}
+button:nth-child(2):hover {
+  background-color: #dc2626;
+}
+
+button:nth-child(3) {
+  background-color: #8b5cf6; /* ungu */
+}
+button:nth-child(3):hover {
+  background-color: #7c3aed;
+}
+
+/* Box Rumus */
+#formula {
+  font-family: monospace;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  white-space: pre-wrap;
+}
+
+/* Penjelasan rumus */
+#penjelasan {
+  background-color: #fff7ed;
+  border-left: 4px solid #f97316;
+  padding: 16px;
+  margin-top: 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+#penjelasan h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+/*  Footer di tengah abu */
+footer {
+  text-align: center;
+  color: #7a7a7a; /* abu lembut */
+  font-size: 0.85rem;
+  margin-top: 40px;
+}
+
+/* Icon Cuaca di tengah */
+#iconCuaca {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 16px;
+}

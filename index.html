@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    div class="container">
+  <div class="container">
     <h1>🌡️ Kalkulator Suhu</h1>
 
     <!-- Catatan penggunaan -->
     <div class="note">
       <b>Catatan:</b><br>
-      Masukkan nilai suhu dalam Celsius (°C) di bawah, lalu tekan tombol <i>Konversi</i> untuk melihat hasilnya dalam Fahrenheit (°F). 
-      Jika ingin mengubah arah konversi, tinggal klik tombol <i>Reverse</i>.
+      Masukkan nilai suhu dalam Celsius (°C) di bawah, lalu tekan tombol Konversi untuk melihat hasil dalam Fahrenheit (°F). 
+      Jika ingin mengubah arah konversi, klik tombol Reverse.
     </div>    
 
     <!-- Menampilkan ikon cuaca berdasarkan suhu -->
@@ -22,7 +22,7 @@
 
     <!-- Input suhu -->
     <label for="inputSuhu" id="inputLabel">Celsius (°C)</label>
-    <input type="text" id="inputSuhu" placeholder="Contoh: 25" />
+    <input type="text" id="inputSuhu" placeholder="masukan suhu celcius" />
     <p id="peringatan" class="peringatan"></p>
 
     <!-- Output suhu hasil konversi -->
@@ -38,16 +38,15 @@
 
     <!-- Rumus atau proses kalkulasi -->
     <label for="formula">Cara Kalkulasi</label>
-    <textarea id="formula" readonly placeholder="Langkah konversi suhu akan ditampilkan di sini."></textarea>
+    <textarea id="formula" readonly placeholder=" konversi suhu akan ditampilkan di sini."></textarea>
 
-    <!-- Penjelasan rumus konversi -->
     <div id="penjelasan">
-      <h2>🔍 Rumus Konversi</h2>
-      <p><strong>Celsius ➜ Fahrenheit:</strong> (°C × 9/5) + 32</p>
-      <p><strong>Fahrenheit ➜ Celsius:</strong> (°F - 32) × 5/9</p>
-    </div>
-
-    <!-- Footer pribadi -->
+        <h2> 🔍 Rumus Konversi Suhu</h2>
+        <p>Celsius ke Fahrenheit: <b>S(°F) = (S(°C) × 9/5) + 32</b></p>
+        <p>Fahrenheit ke Celsius: <b>S(°C) = (S(°F) - 32) × 5/9</b></p>
+      </div>
+    
+    <!-- Footer -->
     <footer>
       <p style="text-align: center; color: gray;">© 2025 Najwa. All rights reserved.</p>
     </footer>
@@ -56,3 +55,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
