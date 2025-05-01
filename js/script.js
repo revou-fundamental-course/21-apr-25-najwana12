@@ -50,7 +50,6 @@ function convert() {
     formulaBox.value = `${value}°C × 9/5 + 32= ${fahrenheit}°F`;
     tampilkanIconCuaca(value); // suhu awal dalam Celsius
    console.log(`${value}°C = ${fahrenheit}°F`);
-
   } else {
     const celsius = ((value - 32) * 5 / 9).toFixed(2);
     output.value = parseFloat(celsius).toLocaleString("id-ID", {
